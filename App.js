@@ -1,23 +1,21 @@
-import React, { useState } from 'react';
-import {
-  Image,
-  KeyboardAvoidingView,
-  SafeAreaView,
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  FlatList,
-  StyleSheet,
-  ScrollView,
-} from 'react-native';
+import React from 'react';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
- return(
-  <KeyboardAvoidingView 
-  style = {styles.container}
-  behavior={platform.OS === "ios" ? "padding" : "height"}
-  >
-   
-   }
+  return (
+    <View style={styles.container}>
+      <Text>ClassTrack App Homepage</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
